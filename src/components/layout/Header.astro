@@ -1,0 +1,47 @@
+---
+import { siteConfig } from "@config/site";
+
+import NavItems from "@components/navigation/NavItems.astro";
+import Primitive from "@components/ui/Primitive.astro";
+import StatusDot from "@components/ui/StatusDot.astro";
+---
+
+<header
+  class="fixed inset-x-page-gutter top-page-gutter z-sticky flex justify-center pointer-events-none"
+>
+  <nav
+    class="pointer-events-auto flex min-h-header-height w-full max-w-7xl items-center justify-between px-container-padding surface-glass"
+    aria-label="Main"
+  >
+    <Primitive
+      as="a"
+      href="/"
+      class="inline-flex items-center gap-4 text-sm font-medium tracking-tight text-fg-primary text-accent whitespace-nowrap"
+      aria-current={Astro.url.pathname === "/" ? "page" : undefined}
+    >
+      <img src="/favicon.svg" alt="" class="size-6" aria-hidden="true" />
+      {siteConfig.name}
+      <StatusDot />
+    </Primitive>
+
+    <div class="flex items-center gap-4">
+      <div class="hidden gap-4 md:flex">
+        <NavItems
+          items={siteConfig.navigation.main}
+          itemClass="text-sm font-medium tracking-tight text-fg-secondary whitespace-nowrap hover:text-fg-primary hover:text-accent"
+        />
+      </div>
+
+      <Primitive
+        as="button"
+        type="button"
+        data-menu-trigger
+        class="cursor-pointer text-sm font-medium tracking-tight text-fg-secondary whitespace-nowrap hover:text-fg-primary hover:text-accent md:hidden"
+        aria-expanded="false"
+        aria-controls="mobile-menu-drawer"
+      >
+        Menu
+      </Primitive>
+    </div>
+  </nav>
+</header>

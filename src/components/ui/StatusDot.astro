@@ -1,0 +1,17 @@
+---
+import { cn } from "@utils/cn";
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"svg"> {}
+
+const { class: className, ...props } = Astro.props;
+---
+
+<svg
+  viewBox="-5 -5 10 10"
+  aria-hidden="true"
+  {...props}
+  class={cn("self-center shrink-0 size-2 fill-brand-500", className)}
+>
+  <circle r="5"></circle>
+</svg>

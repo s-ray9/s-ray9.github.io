@@ -1,0 +1,65 @@
+@import "./tokens.css";
+@import "tailwindcss";
+
+html {
+  scrollbar-gutter: stable;
+}
+
+html,
+body {
+  min-height: 100dvh;
+  margin: 0;
+  background: var(--color-bg-primary);
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--color-fg-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-brand);
+  letter-spacing: var(--tracking-wide);
+  line-height: var(--leading-tight);
+}
+
+h1 {
+  font-size: var(--text-6xl);
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--tracking-none);
+  line-height: 0.8;
+}
+
+a {
+  text-decoration: none;
+}
+
+@utility text-accent {
+  text-shadow: 0 0 --spacing(2) var(--color-brand-500);
+}
+
+@utility surface-glass {
+  border: 1px solid --alpha(var(--color-border-primary) / 25%);
+  border-radius: var(--radius-2xl);
+  background: --alpha(var(--color-bg-secondary) / 25%);
+  backdrop-filter: blur(var(--blur-xl));
+}
+
+@utility pt-header-clearance {
+  padding-top: calc(
+    var(--spacing-page-gutter) + var(--spacing-header-height) +
+      var(--spacing-header-offset)
+  );
+}
+
+/* 
+* {
+  outline: 1px solid rgba(255, 0, 0, 0.3) !important;
+  background: rgba(255, 0, 0, 0.02) !important;
+}
+*/

@@ -1,43 +1,35 @@
-# Astro Starter Kit: Minimal
+<div align="center">
 
-```sh
-npm create astro@latest -- --template minimal
+<img src="public/og-image.png" alt="Banner graphic featuring the name s_ray9 and the titles systems developer and game developer" width="100%" style="max-width: 850px; border-radius: 8px; display: block; margin: 0 auto 16px auto;">
+
+# Personal Portfolio
+
+The open-source repository for my personal portfolio website, showcasing my work in software architecture, game development, and technical writing.
+
+[![License](https://img.shields.io/github/license/s-ray9/s-ray9.github.io?style=flat-square&color=blue&label=License&labelColor=24292e)](LICENSE) [![Pipeline](https://img.shields.io/github/actions/workflow/status/s-ray9/s-ray9.github.io/deploy.yml?style=flat-square&logo=githubactions&logoColor=white&label=Pipeline&labelColor=24292e)](https://github.com/s-ray9/s-ray9.github.io/actions) [![Vercel](https://img.shields.io/badge/Vercel-live-success?style=flat-square&logo=vercel&logoColor=white&labelColor=000000)](https://s-ray9.vercel.app) [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-live-success?style=flat-square&logo=github&logoColor=white&labelColor=24292e)](https://s-ray9.github.io)
+
+![Astro](https://img.shields.io/badge/Astro-FF5D01?style=flat-square&logo=astro&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=three.js&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)
+
+</div>
+
+---
+
+## 🛠️ Development
+
+### Local Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/s-ray9/s-ray9.github.io.git
+cd s-ray9.github.io
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📄 License
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
