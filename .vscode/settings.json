@@ -3,8 +3,15 @@
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
   "editor.wordWrap": "on",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
   "files.associations": {
     "*.css": "tailwindcss"
+  },
+  "files.exclude": {
+    "**/.astro": true,
+    "**/.DS_Store": true
   },
   "search.exclude": {
     "**/.astro": true,
@@ -16,8 +23,5 @@
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "explicit"
     }
-  },
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
   }
 }
