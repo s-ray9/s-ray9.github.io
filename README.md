@@ -14,7 +14,7 @@ The open-source repository for my personal portfolio website, showcasing my work
 
 ---
 
-## 🛠️ Development
+## Development
 
 ### Local Setup
 
@@ -30,6 +30,6 @@ npm install
 npm run dev
 ```
 
-## 📄 License
+## License
 
-Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+Distributed under the **MIT License**. See [LICENSE](LICENSE) for more information.
